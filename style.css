@@ -1,0 +1,161 @@
+/* Reset basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif; /* Premium font from Google Fonts */
+    background: linear-gradient(135deg, #4e73df, #1c1f38);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.payment-container {
+    background: rgba(0, 0, 0, 0.7); /* Transparent background with dark overlay */
+    width: 400px;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(15px); /* Slight blur for depth */
+    position: relative;
+}
+
+h1 {
+    font-size: 28px;
+    color: #ffffff;
+    font-weight: 700;
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #6c5ce7;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    color: #b3b3b3;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+input[type="text"], input[type="number"] {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #4e73df;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-top: 8px;
+    outline: none;
+    background-color: #fff;
+    color: #333;
+    transition: all 0.3s ease-in-out;
+}
+
+input[type="text"]:focus, input[type="number"]:focus {
+    border-color: #6c5ce7;
+    background-color: #f0f0f0;
+}
+
+input[type="text"]:hover, input[type="number"]:hover {
+    border-color: #6c5ce7;
+    background-color: #f9f9f9;
+}
+
+.error-message {
+    color: #ff4d4d;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+/* Button styling */
+button {
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(45deg, #6c5ce7, #9b59b6);
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    letter-spacing: 1px;
+}
+
+button:hover {
+    background: linear-gradient(45deg, #9b59b6, #6c5ce7);
+    transform: scale(1.05);
+}
+
+footer {
+    margin-top: 25px;
+    font-size: 14px;
+    color: #bbb;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Animations for input fields */
+input[type="text"], input[type="number"] {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+button {
+    animation: bounceIn 0.5s ease-in-out;
+}
+
+/* Keyframe animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounceIn {
+    from {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Responsive design */
+@media (max-width: 480px) {
+    .payment-container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    button {
+        font-size: 16px;
+    }
+    }

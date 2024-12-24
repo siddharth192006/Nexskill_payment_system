@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NexForge</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="payment-container">
+        <h1>NexForge Payment</h1>
+        <form id="payment-form">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                <span id="name-error" class="error-message"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="text" id="phone" name="phone" placeholder="Enter your 10-digit phone number" required>
+                <span id="phone-error" class="error-message"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="amount">Amount</label>
+                <input type="number" id="amount" name="amount" placeholder="Enter amount" required>
+                <span id="amount-error" class="error-message"></span>
+            </div>
+
+            <button type="submit" class="submit-btn">Pay Now</button>
+        </form>
+    </div>
+
+    <script src="scricpt.js"></script>
+</body>
+</html>
